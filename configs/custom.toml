@@ -1,0 +1,23 @@
+# Initial conditions for the three-body simulation (units: G = 1).
+# Body 1 is the reference body: keep its initial conditions fixed and
+# play with bodies 2 and 3. All three bodies then move freely.
+
+name = "custom"
+t_end = 40        # simulated time
+softening = 0   # 0 = pure Newtonian gravity
+recenter = true     # shift to the centre-of-mass frame (same physics, no drift)
+
+[body1]  # fixed initial conditions
+mass = 1
+position = [0, 0, 0]
+velocity = [0, 0, 0]
+
+[body2]  # free: edit me
+mass = 1
+position = [-1.1, -0.3, 1.1]
+velocity = [-0.3, -0.8, 0.3]
+
+[body3]  # free: edit me
+mass = 1
+position = [0.1, -0.4, -0.6]
+velocity = [-0.8, 0.4, -0.7]

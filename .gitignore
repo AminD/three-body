@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Notebooks and editor
+.ipynb_checkpoints/
+.vscode/
+
+# Local outputs (the figures shown in the README are tracked in figures/)
+output/
